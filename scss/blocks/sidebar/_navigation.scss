@@ -1,0 +1,46 @@
+.aside-nav {
+	flex-grow: 1;
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		margin-top: 18px;
+		gap: 24px;
+
+		@media (min-width: $screen-md) {
+			margin-top: 40px;
+			gap: 32px;
+		}
+
+		@media (min-width: $screen-lg) {
+			margin-top: 20px;
+			gap: 28px;
+		}
+	}
+
+	&__link {
+		@include fonts($fonts-demibold, 1.15em, 1.5em, -0.2px);
+		color: $fonts-main;
+
+		&:hover {
+			position: relative;
+			color: $fonts-alt;
+			transition: 0.3s;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: -14px;
+				height: 32px;
+				border: 2px solid $headline-decoration;
+				border-radius: 0 4px 4px 0;
+				transform: translate(-50%, -50%);
+
+				@media (min-width: $screen-lg) {
+					left: -22px;
+				}
+			}
+		}
+	}
+}

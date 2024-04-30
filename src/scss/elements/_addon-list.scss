@@ -1,0 +1,11 @@
+.addon-list {
+	display: none;
+
+	@media (min-width: $screen-sm) {
+		display: flex;
+	}
+
+	@media (min-width: $screen-lg) {
+		display: none;
+	}
+}

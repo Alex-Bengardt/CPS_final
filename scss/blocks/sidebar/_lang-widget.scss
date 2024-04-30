@@ -1,0 +1,28 @@
+.lang-widget {
+	display: flex;
+	gap: 7px;
+
+	@media (min-width: $screen-md) {
+		margin-top: 22px;
+	}
+
+	&__btn {
+		position: absolute;
+		appearance: none;
+
+		&:checked + .lang-widget__list-item {
+			transform: scale(1.3);
+			color: $fonts-alt;
+		}
+	}
+
+	&__list-item {
+		@include fonts($fonts-demibold, 1.15em, 1.5em, -0.2px);
+		cursor: pointer;
+		transition: 0.3s;
+
+		&:hover {
+			transform: scale(1.3);
+		}
+	}
+}

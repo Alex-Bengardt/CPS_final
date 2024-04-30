@@ -1,0 +1,125 @@
+.header {
+	display: grid;
+	justify-content: space-between;
+	align-items: center;
+	grid-template-columns: auto auto;
+
+	@media (min-width: $screen-lg) {
+		padding: 42px 34px 0 0;
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		grid-column-start: 1;
+		grid-column-end: -1;
+		height: 88px;
+		padding: 0 16px;
+		background-color: $bg-color-section-header;
+		border-bottom: 1px solid $border-section;
+
+		@media (min-width: $screen-md) {
+			padding: 0 24px;
+		}
+
+		@media (min-width: $screen-lg) {
+			height: auto;
+			padding: 0;
+			grid-column-start: 2;
+			background-color: transparent;
+			border: none;
+		}
+	}
+
+	&__logo-box {
+		display: flex;
+		position: relative;
+		justify-content: center;
+
+		@media (min-width: $screen-sm) {
+			width: 128px;
+		}
+
+		&:after {
+			position: absolute;
+			content: "";
+			right: -20px;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			height: 32px;
+			width: 2px;
+			background-color: $separator;
+
+			@media (min-width: $screen-sm) {
+				left: 0;
+			}
+
+			@media (min-width: $screen-lg) {
+				display: none;
+			}
+		}
+	}
+
+	&__right-list {
+		display: flex;
+		position: relative;
+		gap: 42px;
+	}
+
+	&__elements-list {
+		display: flex;
+		position: relative;
+		align-items: center;
+		gap: 16px;
+
+		@media (min-width: $screen-lg) {
+			gap: 32px;
+
+			&:first-child {
+				display: none;
+			}
+		}
+	}
+
+	&__label-box {
+		display: flex;
+		justify-content: space-between;
+
+		@media (min-width: $screen-lg) {
+			width: 173px;
+		}
+	}
+
+	&__label {
+		display: none;
+
+		@media (min-width: $screen-lg) {
+			display: block;
+			@include fonts($fonts-demibold, 1.15em, 1.5em, -0.2px);
+			align-self: center;
+			cursor: default;
+		}
+
+		&:hover {
+			color: $fonts-alt;
+		}
+	}
+
+	&__title {
+		position: relative;
+		padding: 24px 16px;
+		@include fonts($fonts-bold, 2em, 1.43em, -0.6px);
+		white-space: nowrap;
+
+		@media (min-width: $screen-md) {
+			padding: 24px 24px 24px 24px;
+		}
+
+		@media (min-width: $screen-lg) {
+			padding: 0 34px;
+			grid-row-start: 1;
+			grid-column-end: 1;
+		}
+	}
+}

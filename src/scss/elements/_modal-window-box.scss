@@ -1,0 +1,56 @@
+.modal-window-box {
+	display: flex;
+	position: absolute;
+	right: 0;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 24px 16px;
+	gap: 16px;
+	width: 320px;
+	height: 100vh;
+	background-color: $bg-color-active-btn;
+	z-index: 2;
+	transition: 0.5s;
+
+	@media (min-width: $screen-sm) {
+		box-shadow: -16px 0px 52px $modal-window-outer-frame-xs;
+	}
+
+	&.sidebar__content {
+		display: flex;
+		position: absolute;
+		left: 0;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 18px 16px 32px 16px;
+		gap: 8px;
+		width: 320px;
+		height: 100vh;
+		background-color: $bg-color-active-btn;
+		z-index: 1;
+		transition: 0.5s;
+
+		@media (min-width: $screen-sm) {
+			box-shadow: 16px 0px 52px $modal-window-outer-frame-xs;
+		}
+
+		@media (min-width: $screen-md) {
+			gap: 18px;
+		}
+
+		@media (min-width: $screen-lg) {
+			position: sticky;
+			padding: 24px 24px 32px 24px;
+			max-width: 320px;
+			box-shadow: none;
+		}
+	}
+
+	@media (min-width: $screen-lg) {
+		padding: 40px 32px;
+	}
+
+	@media (min-width: $screen-lg) {
+		width: 440px;
+	}
+}

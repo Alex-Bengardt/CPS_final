@@ -1,0 +1,23 @@
+.page {
+	margin: 0 auto;
+	min-width: $screen-xs;
+	max-width: $screen-xl;
+
+	@media (min-width: $screen-lg) {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__content {
+		margin: 0 auto;
+		z-index: 0;
+
+		@media (min-width: $screen-sm) {
+			max-width: $screen-md;
+		}
+
+		@media (min-width: $screen-md) {
+			max-width: $screen-lg;
+		}
+	}
+}

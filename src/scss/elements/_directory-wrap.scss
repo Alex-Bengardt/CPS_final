@@ -1,0 +1,17 @@
+.directory-wrap {
+	display: flex;
+	position: relative;
+	flex-wrap: nowrap;
+
+	@media (min-width: $screen-md) {
+		flex-wrap: wrap;
+		column-gap: 24px;
+		row-gap: 16px;
+		transition: max-height 0.5s;
+
+		&:not(.prices__wrap) {
+			max-height: 160px;
+			overflow-y: hidden;
+		}
+	}
+}

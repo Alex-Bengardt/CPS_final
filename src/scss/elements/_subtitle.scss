@@ -1,0 +1,23 @@
+.subtitle {
+	display: block;
+	min-height: 56px;
+	padding: 16px;
+	@include fonts($fonts-medium, 1.15em, 1.5em, -0.2px);
+	color: $fonts-alt;
+	font-weight: 100;
+	text-transform: uppercase;
+	background: linear-gradient(
+		270deg,
+		$bg-color-section-header 0%,
+		$bg-color-main 100%
+	);
+	border-top: 1px solid $border-section;
+
+	@media (min-width: $screen-md) {
+		padding: 16px 24px;
+	}
+
+	@media (min-width: $screen-lg) {
+		padding: 16px 32px;
+	}
+}

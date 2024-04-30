@@ -1,0 +1,40 @@
+.show-all {
+	display: block;
+	position: relative;
+	@include fonts($fonts-demibold, 1.15em, 1.5em, -0.2px);
+	background-color: $bg-color-main;
+	border: none;
+	cursor: pointer;
+
+	&:not(.about-company-article__read-more) {
+		display: none;
+
+		@media (min-width: $screen-md) {
+			display: block;
+			margin-left: 24px;
+			padding-left: 34px;
+		}
+
+		@media (min-width: $screen-lg) {
+			margin-left: 34px;
+			padding-left: 34px;
+		}
+	}
+
+	&:before {
+		position: absolute;
+		content: "";
+		left: 10px;
+		top: 51%;
+		transform: translate(-50%, -50%);
+		width: 20px;
+		height: 20px;
+		background: url("~/img/icons.png") -140px -140px;
+	}
+
+	&_expanded {
+		&:before {
+			transform: translate(-50%, -50%) rotate(180deg);
+		}
+	}
+}

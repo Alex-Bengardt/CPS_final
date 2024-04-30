@@ -1,0 +1,13 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+
+	@media (min-width: $screen-md) {
+		row-gap: 32px;
+	}
+
+	@media (min-width: $screen-lg) {
+		row-gap: 50px;
+	}
+}

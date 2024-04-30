@@ -1,0 +1,6 @@
+.alt-text {
+	@include fonts($fonts-medium, 1em, 1.15em, 0);
+	color: $fonts-alt;
+	opacity: 0.7;
+	font-weight: 100;
+}

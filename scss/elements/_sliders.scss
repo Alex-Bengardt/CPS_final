@@ -1,0 +1,21 @@
+.pagination {
+	@media (min-width: $screen-md) {
+		display: none;
+	}
+}
+
+.swiper-pagination-bullets {
+	display: flex;
+	justify-content: center;
+	padding-top: 16px;
+}
+
+.swiper-pagination-bullet {
+	width: 12px !important;
+	height: 12px !important;
+	background-color: $swiper-bullet !important;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: $swiper-bullet-active !important;
+}

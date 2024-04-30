@@ -1,0 +1,21 @@
+.bg-field {
+	display: none;
+
+	&.sidebar__wrapper {
+		@media (min-width: $screen-lg) {
+			display: none;
+		}
+	}
+
+	@media (min-width: $screen-md) {
+		display: block;
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: $modal-window-background;
+		opacity: 0.9;
+	}
+}
