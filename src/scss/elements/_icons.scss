@@ -18,65 +18,36 @@
 		background-color: $fonts-main;
 		opacity: 0.85;
 	}
-}
 
-.icon-list {
-	background-position: -10px -10px;
-}
+	&_list {
+		background-position: -10px -10px;
+	}
 
-.icon-call {
-	background-position: -70px -10px;
-}
+	&_call {
+		background-position: -70px -10px;
+	}
 
-.icon-chat {
-	background-position: -10px -70px;
-}
+	&_chat {
+		background-position: -10px -70px;
+	}
 
-.icon-profile {
-	background-position: -70px -70px;
-}
+	&_profile {
+		background-position: -70px -70px;
+	}
 
-.icon-repair {
-	background-position: -130px -10px;
-}
+	&_repair {
+		background-position: -130px -10px;
+	}
 
-.icon-status {
-	background-position: -130px -70px;
-}
+	&_status {
+		background-position: -130px -70px;
+	}
 
-.icon-search {
-	background-position: -10px -130px;
-}
+	&_search {
+		background-position: -10px -130px;
+	}
 
-.icon-close {
-	background-position: -70px -130px;
-}
-
-.handling__icon {
-	content: "";
-	position: absolute;
-	top: 50%;
-	width: 128px;
-	height: 128px;
-	align-self: flex-end;
-}
-
-.icon-laptop {
-	background: url("~/img/maintenance_works.png") 0 -128px;
-	transform: translate(0, -25%) scale(0.5);
-}
-
-.icon-tablet {
-	background: url("~/img/maintenance_works.png") -128px 0;
-	transform: translate(0, -25%) scale(0.5);
-}
-
-.icon-pc {
-	background: url("~/img/maintenance_works.png") -128px -128px;
-	transform: translate(0, -25%) scale(0.5);
-}
-
-.icon-monitor {
-	background: url("~/img/maintenance_works.png") -256px 0;
-	transform: translate(0, -25%) scale(0.5);
+	&_close {
+		background-position: -70px -130px;
+	}
 }

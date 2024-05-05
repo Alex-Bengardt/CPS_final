@@ -27,7 +27,7 @@
 		@media (min-width: $screen-md) {
 			&:nth-child(2) {
 				display: inline-block;
-				margin-top: 18px;
+				padding-top: 18px;
 			}
 
 			&:last-child {
@@ -44,7 +44,7 @@
 		&_expanded {
 			&:nth-child(2) {
 				display: inline-block;
-				margin-top: 18px;
+				padding-top: 18px;
 			}
 
 			&:last-child {

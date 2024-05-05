@@ -1,7 +1,7 @@
 // Импорт свайпера
 import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 
-const brands = document.querySelector('.brands__list');
+const brands = document.querySelector('.brand__list');
 let brandsSwiper;
 let maintenanceSwiper;
 let pricesSwiper;
@@ -11,7 +11,7 @@ const swipersHandler = () => {
   if (document.documentElement.clientWidth <= 767 && brands.dataset.mobile === 'false') {
 
     // Свайпер "Ремонт брендов"
-    brandsSwiper = new Swiper('.brands__list', {
+    brandsSwiper = new Swiper('.brand__list', {
       slidesPerView: 'auto',
       spaceBetween: 16,
       autoplay: {
@@ -19,18 +19,18 @@ const swipersHandler = () => {
       },
       speed: 1000,
       pagination: {
-        el: '.brands__list-pagination',
+        el: '.brand__list-pagination',
         type: 'bullets',
         clickable: true,
       },
       modules: [Navigation, Pagination, Autoplay],
       // Классы слайдера по БЭМ
       wrapperClass: 'brands__wrap',
-      slideClass: 'brands__list-item',
-      slideActiveClass: 'brands__list-item-active',
-      slideNextClass:	'brands__list-item-next',
-      slidePrevClass:	'brands__list-item-prev',
-      slideVisibleClass: 'brands__list-item-visible',
+      slideClass: 'brand__list-item',
+      slideActiveClass: 'brand__list-item-active',
+      slideNextClass:	'brand__list-item-next',
+      slidePrevClass:	'brand__list-item-prev',
+      slideVisibleClass: 'brand__list-item-visible',
     });
 
     // Свайпер "Виды техники"
