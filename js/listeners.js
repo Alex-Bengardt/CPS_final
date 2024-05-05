@@ -1,8 +1,8 @@
 // Получаем элемент боковой панели и кнопку, которая ее активирует
 const sidebar = document.querySelector('.sidebar');
-const sidebarOpenButton = document.querySelector('.icon-list');
+const sidebarOpenButton = document.querySelector('.icon_list');
 // Собираем со страницы все элементы, закрывающие окна
-const modalsCloseBtns = Array.from(document.querySelectorAll('.icon-close'));
+const modalsCloseBtns = Array.from(document.querySelectorAll('.icon_close'));
 const modalsCloseBG = Array.from(document.querySelectorAll('.bg-field'));
 // Извлекаем первые элементы из двух верхних массивов. Это кнопки для закрытия
 // сайдбара. Запихиваем их в новый массив
@@ -16,9 +16,9 @@ const dirWrappers = document.querySelectorAll('.directory-wrap');
 const aboutUsArticleWrapper = document.querySelector('.about-company-article__excerpt');
 const aboutUsArticle = document.querySelectorAll('.about-company-article__text');
 // Собираем со страницы модальные окна и кнопки, которые их активируют
-const modalWindowPhoneBtns = document.querySelectorAll('.icon-call');
+const modalWindowPhoneBtns = document.querySelectorAll('.icon_call');
 const modalWindowPhone = document.querySelector('.page__modal-phone');
-const modalWindowEmailBtns = document.querySelectorAll('.icon-chat');
+const modalWindowEmailBtns = document.querySelectorAll('.icon_chat');
 const modalWindowEmail = document.querySelector('.page__modal-email');
 
 const modalWindows = [modalWindowPhone, modalWindowEmail];
