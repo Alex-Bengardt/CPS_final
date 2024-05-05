@@ -118,3 +118,4 @@ function hideElementOnEscape(event) {
 }
 
 window.addEventListener('keydown', hideElementOnEscape);
+
