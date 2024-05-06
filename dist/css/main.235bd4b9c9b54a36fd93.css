@@ -450,17 +450,17 @@ table {
   }
 }
 
-.brand__list-item {
+.brands__list-item {
   height: 72px;
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
 }
-.brand__list-item::before {
+.brands__list-item::before {
   right: 32px;
   top: 44%;
 }
-.brand__list-item::after {
+.brands__list-item::after {
   right: 0;
   top: 50%;
 }
@@ -1969,4 +1969,4 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
-/*# sourceMappingURL=main.5a8b5621b5b450e448c0.css.map*/
+/*# sourceMappingURL=main.235bd4b9c9b54a36fd93.css.map*/
