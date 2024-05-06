@@ -25,7 +25,7 @@ const swipersHandler = () => {
       },
       modules: [Navigation, Pagination, Autoplay],
       // Классы слайдера по БЭМ
-      wrapperClass: 'brands__wrap',
+      wrapperClass: 'brand__wrap',
       slideClass: 'brand__list-item',
       slideActiveClass: 'brand__list-item-active',
       slideNextClass:	'brand__list-item-next',
